@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Moda niños</title>
+    <link rel="stylesheet" href="css/stylos.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+               <a href="index.html" ><h1>MOTHERCARE</h1></a>
+        </div>
+
+        <div class="search-container">
+            <input type="text" placeholder="Buscar..." class="search-input"/>
+            <img src="imagenes/usuario.png" alt="usuario" class="cart-icon">
+            <img src="imagenes/carrito.webp" alt="carrito" class="cart-icon">
+            <img src="imagenes/ubicacion.webp" alt="ubicación" class="cart-icon">
+        </div>        
+        
+        
+          <!-- Menú -->
+    <nav class="navbar">
+        <ul>
+            <li class="izquierdo"><a href="index.html">Inicio</a></li>
+            
+            <li class="centro">
+                <a href="#">Categorías</a>
+                <ul class="submenu">
+                    <li><a href="modaNiña.html">Moda niña</a></li>
+                    <li><a href="#">Bebes</a></li>
+                    <li><a href="modaNiños.html">Moda niños</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="ofertas.html">Ofertas</a></li>
+            <li><a href="quienessomos.html">Quiénes somos</a></li>
+            <li class="derecho"><a href="productos.html">Productos</a></li>
+        </ul>
+    </nav>
+        
+
+    <main class="main-content">
+    <div class="container">
+      <aside class="filters-sidebar">
+        <h3><i class="fas fa-filter"></i> Filtros</h3>
+
+        <div class="filter-group">
+          <h4>Categoría</h4>
+          <div class="filter-options">
+            <label><input type="radio" name="category" value="all" checked> Todas</label>
+            <label><input type="radio" name="category" value="camisas"> Camisas</label>
+            <label><input type="radio" name="category" value="chaquetas"> Chaquetas</label>
+            <label><input type="radio" name="category" value="pantalones"> Pantalones</label>
+            <label><input type="radio" name="category" value="zapatos"> Zapatos</label>
+            <label><input type="radio" name="category" value="gorras"> Gorras</label>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <h4>Color</h4>
+          <div class="filter-options">
+            <label><input type="radio" name="color" value="all" checked> Todos</label>
+            <label><input type="radio" name="color" value="azul"> Azul</label>
+            <label><input type="radio" name="color" value="verde"> Verde</label>
+            <label><input type="radio" name="color" value="gris"> Gris</label>
+            <label><input type="radio" name="color" value="negro"> Negro</label>
+            <label><input type="radio" name="color" value="rojo"> Rojo</label>
+            <label><input type="radio" name="color" value="amarillo"> Amarillo</label>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <h4>Talla</h4>
+          <div class="filter-options">
+            <label><input type="radio" name="size" value="all" checked> Todas</label>
+            <label><input type="radio" name="size" value="XS"> XS (1-2 años)</label>
+            <label><input type="radio" name="size" value="S"> S (3-4 años)</label>
+            <label><input type="radio" name="size" value="M"> M (5-6 años)</label>
+            <label><input type="radio" name="size" value="L"> L (7-8 años)</label>
+            <label><input type="radio" name="size" value="XL"> XL (9-10 años)</label>
+            <label><input type="radio" name="size" value="XXL"> XXL (11-12 años)</label>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <h4>Edad</h4>
+          <div class="filter-options">
+            <label><input type="radio" name="age" value="all" checked> Todas las edades</label>
+            <label><input type="radio" name="age" value="1-3"> 1-3 años</label>
+            <label><input type="radio" name="age" value="4-6"> 4-6 años</label>
+            <label><input type="radio" name="age" value="7-9"> 7-9 años</label>
+            <label><input type="radio" name="age" value="10-12"> 10-12 años</label>
+          </div>
+        </div>
+      </aside>
+
+      <section class="products-section">
+        <div class="products-header">
+          <h2>Nuestra Colección - Niños</h2>
+        </div>
+
+        <div class="products-grid">
+          <!-- Camisas -->
+          <div class="product-card" data-category="camisas" data-color="azul" data-size="S" data-age="4-6">
+            <div class="product-image">
+              <span class="product-icon">👕</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Camiseta Dino Azul</h3>
+              <p class="product-description">Camiseta algodón con un divertido estampado de dinosaurios, ideal para el recreo.</p>
+              <div class="product-details">
+                <span><i class="fas fa-palette"></i> Azul</span>
+                <span><i class="fas fa-ruler"></i> S (3-4 años)</span>
+              </div>
+              <div class="product-price">$25.000</div>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Añadir al Carrito</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="camisas" data-color="gris" data-size="M" data-age="4-6">
+            <div class="product-image">
+              <span class="product-icon">👕</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Camiseta Rayas Gris</h3>
+              <p class="product-description">Camiseta de rayas finas, suave y resistente — para uso diario y colegio.</p>
+              <div class="product-details">
+                <span><i class="fas fa-palette"></i> Gris</span>
+                <span><i class="fas fa-ruler"></i> M (5-6 años)</span>
+              </div>
+              <div class="product-price">$27.000</div>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Añadir al Carrito</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="camisas" data-color="verde" data-size="L" data-age="7-9">
+            <div class="product-image">
+              <span class="product-icon">👕</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Camiseta Aventuras Verde</h3>
+              <p class="product-description">Camiseta temática de aventuras y coches, cómoda y fresca.</p>
+              <div class="product-details">
+                <span><i class="fas fa-palette"></i> Verde</span>
+                <span><i class="fas fa-ruler"></i> L (7-8 años)</span>
+              </div>
+              <div class="product-price">$30.000</div>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Añadir al Carrito</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="camisas" data-color="rojo" data-size="XS" data-age="1-3">
+            <div class="product-image">
+              <span class="product-icon">👕</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Camiseta Estrella Roja</h3>
+              <p class="product-description">Camiseta pequeña con estampado de estrellas — ideal para bebés activos.</p>
+              <div class="product-details">
+                <span><i class="fas fa-palette"></i> Rojo</span>
+                <span><i class="fas fa-ruler"></i> XS (1-2 años)</span>
+              </div>
+              <div class="product-price">$22.000</div>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Añadir al Carrito</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="camisas" data-color="amarillo" data-size="XL" data-age="10-12">
+            <div class="product-image">
+              <span class="product-icon">👕</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Camiseta Sol Amarilla</h3>
+              <p class="product-description">Camiseta juvenil con dibujo de sol — perfecta para días soleados.</p>
+              <div class="product-details">
+                <span><i class="fas fa-palette"></i> Amarillo</span>
+                <span><i class="fas fa-ruler"></i> XL (9-10 años)</span>
+              </div>
+              <div class="product-price">$31.000</div>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Añadir al Carrito</button>
+            </div>
+          </div>
+
+          <!-- Chaquetas -->
+          <div class="product-card" data-category="chaquetas" data-color="azul" data-size="M" data-age="4-6">
+            <div class="product-image">
+              <span class="product-icon">🧥</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Chaqueta Rompeviento Azul</h3>
+              <p class="product-description">Chaqueta ligera impermeable para aventuras al aire libre.</p>
+              <div class="product-details">
+                <span><i class="fas fa-palette"></i> Azul</span>
+                <span><i class="fas fa-ruler"></i> M (5-6 años)</span>
+              </div>
+              <div class="product-price">$55.000</div>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Añadir al Carrito</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="chaquetas" data-color="negro" data-size="L" data-age="7-9">
+            <div class="product-image">
+              <span class="product-icon">🧥</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Chaqueta Forro Negro</h3>
+              <p class="product-description">Chaqueta con forro suave para mantener calentitos a los más grandes.</p>
+              <div class="product-details">
+                <span><i class="fas fa-palette"></i> Negro</span>
+                <span><i class="fas fa-ruler"></i> L (7-8 años)</span>
+              </div>
+              <div class="product-price">$65.000</div>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Añadir al Carrito</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="chaquetas" data-color="verde" data-size="XS" data-age="1-3">
+            <div class="product-image">
+              <span class="product-icon">🧥</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Chaqueta Soft Verde</h3>
+              <p class="product-description">Abrigo suave y ligero para bebés, con cierre fácil.</p>
+              <div class="product-details">
+                <span><i class="fas fa-palette"></i> Verde</span>
+                <span><i class="fas fa-ruler"></i> XS (1-2 años)</span>
+              </div>
+              <div class="product-price">$48.000</div>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Añadir al Carrito</button>
+            </div>
+          </div>
+
+          <!-- Pantalones -->
+          <div class="product-card" data-category="pantalones" data-color="azul" data-size="S" data-age="4-6">
+            <div class="product-image">
+              <span class="product-icon">👖</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Jean Resistente Azul</h3>
+              <p class="product-description">Pantalón mezclilla flexible, perfecto para jugar y correr.</p>
+              <div class="product-details">
+                <span><i class="fas fa-palette"></i> Azul</span>
+                <span><i class="fas fa-ruler"></i> S (3-4 años)</span>
+              </div>
+              <div class="product-price">$35.000</div>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Añadir al Carrito</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="pantalones" data-color="verde" data-size="M" data-age="4-6">
+            <div class="product-image">
+              <span class="product-icon">👖</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Jogger Deportivo Verde</h3>
+              <p class="product-description">Jogger suave con cordón, ideal para deportes y actividades.</p>
+              <div class="product-details">
+                <span><i class="fas fa-palette"></i> Verde</span>
+                <span><i class="fas fa-ruler"></i> M (5-6 años)</span>
+              </div>
+              <div class="product-price">$33.000</div>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Añadir al Carrito</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="pantalones" data-color="gris" data-size="L" data-age="7-9">
+            <div class="product-image">
+              <span class="product-icon">👖</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Pantalón Formal Gris</h3>
+              <p class="product-description">Pantalón elegante para eventos y celebraciones familiares.</p>
+              <div class="product-details">
+                <span><i class="fas fa-palette"></i> Gris</span>
+                <span><i class="fas fa-ruler"></i> L (7-8 años)</span>
+              </div>
+              <div class="product-price">$40.000</div>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Añadir al Carrito</button>
+            </div>
+          </div>
+
+          <!-- Zapatos -->
+          <div class="product-card" data-category="zapatos" data-color="negro" data-size="M" data-age="4-6">
+            <div class="product-image">
+              <span class="product-icon">👟</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Zapatillas Deportivas Negras</h3>
+              <p class="product-description">Zapatillas con suela antideslizante y cierre fácil — para jugar sin preocupaciones.</p>
+              <div class="product-details">
+                <span><i class="fas fa-palette"></i> Negro</span>
+                <span><i class="fas fa-ruler"></i> M (5-6 años)</span>
+              </div>
+              <div class="product-price">$60.000</div>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Añadir al Carrito</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="zapatos" data-color="azul" data-size="L" data-age="7-9">
+            <div class="product-image">
+              <span class="product-icon">👟</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Tenis Azul Marino</h3>
+              <p class="product-description">Calzado cómodo y resistente, con cierre de velcro para autonomía.</p>
+              <div class="product-details">
+                <span><i class="fas fa-palette"></i> Azul</span>
+                <span><i class="fas fa-ruler"></i> L (7-8 años)</span>
+              </div>
+              <div class="product-price">$62.000</div>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Añadir al Carrito</button>
+            </div>
+          </div>
+
+          <!-- Gorras -->
+          <div class="product-card" data-category="gorras" data-color="rojo" data-size="S" data-age="4-6">
+            <div class="product-image">
+              <span class="product-icon">🧢</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Gorra Roja Aventurero</h3>
+              <p class="product-description">Gorra ajustable con visera para proteger del sol en salidas y parque.</p>
+              <div class="product-details">
+                <span><i class="fas fa-palette"></i> Rojo</span>
+                <span><i class="fas fa-ruler"></i> S (3-4 años)</span>
+              </div>
+              <div class="product-price">$15.000</div>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Añadir al Carrito</button>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="gorras" data-color="amarillo" data-size="XS" data-age="1-3">
+            <div class="product-image">
+              <span class="product-icon">🧢</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Gorra Sol Amarilla</h3>
+              <p class="product-description">Pequeña gorra con diseño divertido, perfecta para bebés en la playa.</p>
+              <div class="product-details">
+                <span><i class="fas fa-palette"></i> Amarillo</span>
+                <span><i class="fas fa-ruler"></i> XS (1-2 años)</span>
+              </div>
+              <div class="product-price">$12.000</div>
+              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Añadir al Carrito</button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </main>
