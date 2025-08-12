@@ -1,4 +1,4 @@
-.nav-container{
+/*.nav-container{
     background-color: rgb(190, 205, 245);
     border-bottom: 2px solid #000;
     border-top: 2px solid #000
@@ -10,7 +10,7 @@
     
 }
 
-/*Centrar el contenedor de la pagina*/
+/*Centrar el contenedor de la pagina
 .search-container {
     display: flex;
     justify-content: center;
@@ -21,7 +21,7 @@
     position: relative;
 }
 
-/*Estilos para centrar la barra de busqueda*/
+/*Estilos para centrar la barra de busqueda
 .search-input {
     flex-grow: 3;
     padding: 15px 25px;
@@ -32,18 +32,18 @@
     box-sizing: border-box;
 }
 
-/*Estilos para el icono del carrito */
+/*Estilos para el icono del carrito 
 .cart-icon {
     width: 60px;
     height: 60px;
     margin-left: 10px;
 }
 
-/*Estilos para el menu*/
-/* Navbar */
+/*Estilos para el menu
+/* Navbar 
 .navbar ul {
     display: flex;
-    justify-content: space-around; /* distribución pareja */
+    justify-content: space-around;  distribución pareja 
     align-items: center;
     list-style: none;
     padding: 0;
@@ -2148,3 +2148,127 @@ body {
   50% { transform: translateX(100%) translateY(100%) rotate(45deg); }
   100% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
 }
+
+
+.header-bar {
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-left,
+.header-center,
+.header-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.header-left {
+    justify-content: flex-start;
+    padding-left: 60px;
+}
+
+.header-center {
+    justify-content: center;
+}
+
+.header-right {
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0e6777;
+}
+
+.search-input {
+    padding: 6px 12px;
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    color: #0e6777;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #3caee4;
+}
+
+/* Navegación Principal */
+nav {
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #666;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #0e6777;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    color: #3caee4;
+}
+
+/* Menú Desplegable */
+.menu-desplegable {
+    position: relative;
+}
+
+.menu-desplegable ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffe0ec;
+    padding: 10px;
+    border-radius: 5px;
+    list-style: none;
+    flex-direction: column;
+}
+
+.menu-desplegable:hover > ul {
+    display: flex;
+}
+
+.menu-desplegable ul a {
+    display: block;
+    padding: 5px 10px;
+    color: #444;
+    text-decoration: none;
+}
+
+.menu-desplegable ul a:hover {
+    background: #ffb6c1;
+}
+
