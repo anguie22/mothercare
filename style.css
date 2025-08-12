@@ -1,0 +1,470 @@
+/* ==================================== */
+/* 1. Estilos generales*/
+/* ==================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === estilos generales === */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff9f4;
+  color: #333;
+}
+
+/* ==================================== */
+/* 2. Encabezado y Navegación */
+/* ==================================== */
+
+.header-bar {
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-left,
+.header-center,
+.header-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.header-left {
+    justify-content: flex-start;
+    padding-left: 60px;
+}
+
+.header-center {
+    justify-content: center;
+}
+
+.header-right {
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0e6777;
+}
+
+.search-input {
+    padding: 6px 12px;
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    color: #0e6777;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #3caee4;
+}
+
+/* Navegación Principal */
+nav {
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #666;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #0e6777;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    color: #3caee4;
+}
+
+/* Menú Desplegable */
+.menu-desplegable {
+    position: relative;
+}
+
+.menu-desplegable ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffe0ec;
+    padding: 10px;
+    border-radius: 5px;
+    list-style: none;
+    flex-direction: column;
+}
+
+.menu-desplegable:hover > ul {
+    display: flex;
+}
+
+.menu-desplegable ul a {
+    display: block;
+    padding: 5px 10px;
+    color: #444;
+    text-decoration: none;
+}
+
+.menu-desplegable ul a:hover {
+    background: #ffb6c1;
+}
+
+
+/* ==================================== */
+/* 3. Secciones Principales */
+/* ==================================== */
+
+/* Carrusel y Video */
+.carrusel {
+    margin-top: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.video-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: #fff6f8;
+}
+
+.video-mini {
+    width: 90%;
+    height: 800px;
+    object-fit: contain;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tarjetas de Flip */
+.card-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-back {
+    background: #f0cdd7;
+    color: #3caee4;
+    transform: rotateY(180deg);
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Categorías de Productos */
+.lista-opciones {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.lista-opciones h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.lista-opciones h3 {
+    font-size: 1.4rem;
+    color: #3caee4;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.categoria {
+    text-align: center;
+}
+
+.producto {
+    background: #fff;
+    padding: 3px;
+    border: 2px solid #f0cdd7;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.producto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.categoria h3 {
+    margin-top: 10px;
+}
+
+/* Sección de Reseñas */
+.reseñas-section {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.reseñas-header h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #0e6777;
+}
+
+.reseñas-header p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.reseñas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.reseña-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    display: flex;
+    text-align: left;
+    gap: 20px;
+}
+
+.reseña-nombre {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.reseña-estrellas {
+    color: #ffc107;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.reseña-texto {
+    color: #555;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* ==================================== */
+/* 4. Pie de Página (Footer) */
+/* ==================================== */
+
+footer {
+    background-color: #858082;
+    padding: 40px 20px;
+    color: #fff;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-col h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #0e6777;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col a {
+    color: #d6d6e7;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.footer-col a:hover {
+    color: #fff;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-links svg {
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+    transition: transform 0.3s;
+}
+
+.social-links svg:hover {
+    transform: scale(1.2);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #5c1620;
+}
+
+/* ==================================== */
+/* 5. Media Queries para Responsividad */
+/* ==================================== */
+
+@media (max-width: 768px) {
+    .header-content,
+    nav ul,
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-left,
+    .header-center,
+    .header-right {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .header-center {
+        order: 3;
+    }
+
+    .header-left {
+        padding-left: 0;
+    }
+    
+    .logo {
+        margin-bottom: 10px;
+    }
+    
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-desplegable ul {
+        position: static;
+        flex-direction: column;
+        align-items: center;
+        background: none;
+        border-radius: 0;
+    }
+
+    .menu-desplegable:hover > ul {
+        display: flex;
+    }
+
+    .card-container,
+    .productos,
+    .reseñas-container {
+        gap: 20px;
+    }
+    
+    .footer-col {
+        min-width: auto;
+    }
+}

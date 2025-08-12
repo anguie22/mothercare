@@ -1,122 +1,264 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mothercare</title>
-    <link rel="stylesheet" href="css/stylos.css">
-</head>
-<body>
-    <header>
-        <div class="nav-container">
-            <div class="logo">
-                <h1>MOTHERCARE</h1>
-        </div>
+<html lang="es">
 
-        <div class="search-container">
-            <input type="text" placeholder="Buscar..." class="search-input"/>
-            <img src="imagenes/usuario.png" alt="usuario" class="cart-icon">
-            <img src="imagenes/carrito.webp" alt="carrito" class="cart-icon">
-            <img src="imagenes/ubicacion.webp" alt="ubicación" class="cart-icon">
-        </div>        
-        
-        
-          <!-- Menú -->
-    <nav class="navbar">
-        <ul>
-            <li class="izquierdo"><a href="#">Inicio</a></li>
-            
-            <li class="centro">
-                <a href="#">Categorías</a>
-                <ul class="submenu">
-                    <li><a href="modaNiña.html">Moda niña</a></li>
-                    <li><a href="bebes.html">Bebes</a></li>
-                    <li><a href="modaNiños.html">Moda niño</a></li>
-                </ul>
-            </li>
-            
-            <li><a href="ofertas.html">Ofertas</a></li>
-            <li><a href="quienessomos.html">Quiénes somos</a></li>
-            <li class="derecho"><a href="productos.html">Productos</a></li>
-        </ul>
-    </nav>
-        
-    </header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MOTHERCARE</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+  <header class="header-bar">
+    <div class="header-content">
+
+      
+      <div class="header-left">
+        <h1 class="logo">MOTHERCARE</h1>
+      </div>
+
+      <div class="header-center">
+        <input type="text" placeholder="Buscar..." class="search-input" />
+      </div>
+
+      
+      <div class="header-right">
+        >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="icon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218
+              c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25L5.106 5.272M6
+              20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75
+              0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+        </svg>
+
+      
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="icon">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+        </svg>
+      </div>
+
+    </div>
+
+
     
-     <section class="lista-opciones">
+
+<nav>
+  <ul>
+    <li><a href="#">Inicio</a></li>
+    <li class="menu-desplegable">
+      <a href="#">Categorías</a>
+      <ul class="submenu">
+        <li><a href="modaNiña.html">Moda niña</a></li>
+        <li><a href="bebes.html">Bebés</a></li>
+        <li><a href="modaNiños.html">Moda niño</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Ofertas</a></li>
+    <li><a href="#">Catálogo</a></li>
+    <li><a href="#">Nueva Colección</a></li>
+    <li><a href="#">quienesSomos</a></li>
+    
+  </ul>
+</nav>
+  </header>
+
+  <section class="carrusel">
+    <div class="slider">
+      <section class="video-section">
+        <img src="multimedia/gif-principal.gif" alt="Animación de ropa infantil" class="video-mini">
+      </section>
+
+  </section>
+
+  <div class="card-container">
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="multimedia/Czapatos.jpg" alt="Imagen 1">
+        </div>
+        <div class="card-back">
+          <h3>Promociones</h3>
+          <p>No te pierdas nuestras promocione</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="multimedia/niña1.jpg" alt="Imagen 2">
+        </div>
+        <div class="card-back">
+          <h3>Moda Niñas</h3>
+          <p>viste tu hija con elegancia y comodidad</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="multimedia/niño2.jpg" alt="Imagen 3">
+        </div>
+        <div class="card-back">
+          <h3>Moda Niños</h3>
+          <p>Detalles que marcan la diferencia</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="multimedia/baby.jpg" alt="Imagen 4">
+        </div>
+        <div class="card-back">
+          <h3>Moda Baby</h3>
+          <p>Todo para los pequeños de la</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="lista-opciones">
     <h2>Descubre nuestros productos:</h2>
     <h3>Elige una Categoría</h3>
   </section>
 
   <main>
     <section class="productos">
-     <div class="categoria"> <div class="producto">
-    <img src="imagenes/modaniña.avif" alt="modaNiña">
-  </div>
-      <a href="modaNiña.html"><h3>Moda Niña</h3></a>
-     </div>
+      <div class="categoria">
+        <div class="producto">
+          <img src="multimedia/Czapatos.jpg" alt="CategoríaZapatos">
+        </div>
+        <h3>Zapatos</h3>
+      </div>
 
-      <div class="categoria"> <div class="producto">
-    <img src="imagenes/" alt="Bebes">
-  </div>
-      <a href="bebes.html"> <h3>Bebes</h3></a>
-     </div>
+      <div class="categoria">
+        <div class="producto">
+          <img src="multimedia/modaNiña.jpg" alt="modaNiña">
+        </div>
+        <h3>Moda niñas</h3>
+      </div>
 
-       <div class="categoria"> <div class="producto">
-    <img src="imagenes/modaniño.avif" alt="modaNiños">
-  </div>
-       <a href="modaNiños.html"><h3>Moda niños</h3></a>
-       </div>
+      <div class="categoria">
+        <div class="producto">
+          <img src="multimedia/modaNiños.jpg" alt="modaNiños">
+        </div>
+        <h3>Moda niños</h3>
+      </div>
 
 
     </section>
   </main>
 
-<!--
-  <section class="carrusel">
-    <div class="slider">
-      <section class="video-section">
-        <video autoplay muted loop playsinline class="video-mini">
-          <source src="imagenes/videoMothercare.mp4" type="video/mp4">
-          
-        </video>
-      </section>
+  <section class="reseñas-section">
+    <div class="reseñas-header">
+      <h2>Reseñas de Nuestros Clientes</h2>
+      <p>Lo que las mamás dicen sobre nuestros productos.</p>
     </div>
-  </section>-->!
 
+    <div class="reseñas-container">
+      <div class="reseña-card">
+        <div class="reseña-content">
+          <div class="reseña-meta">
+            <p class="reseña-nombre">Ana G.</p>
+            <div class="reseña-estrellas">
+              <span>⭐️⭐️⭐️⭐️⭐️</span>
+            </div>
+          </div>
+          <p class="reseña-texto">"Me encanta la calidad de la ropa. ¡Mi bebé se ve hermoso y está muy cómodo! El envío
+            fue rápido y el servicio al cliente excelente."</p>
+        </div>
+      </div>
+
+      <div class="reseña-card">
+        <div class="reseña-content">
+          <div class="reseña-meta">
+            <p class="reseña-nombre">Sofía M.</p>
+            <div class="reseña-estrellas">
+              <span>⭐️⭐️⭐️⭐️</span>
+            </div>
+          </div>
+          <p class="reseña-texto">"Los zapatos son muy suaves y perfectos para los primeros pasos de mi hija.
+            Definitivamente volveré a comprar aquí."</p>
+        </div>
+      </div>
+
+      <div class="reseña-card">
+        <div class="reseña-content">
+          <div class="reseña-meta">
+            <p class="reseña-nombre">Laura P.</p>
+            <div class="reseña-estrellas">
+              <span>⭐️⭐️⭐️⭐️⭐️</span>
+            </div>
+          </div>
+          <p class="reseña-texto">"Los accesorios son únicos y de muy buena calidad. Llegaron en un empaque precioso.
+            ¡Recomendado 100%!"</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+
+      <div class="footer-col">
+        <h3>MOTHERCARE</h3>
+        <div class="social-links">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+            class="w-6 h-6 text-green-500">
+            <title>WhatsApp</title>
+            <path
+              d="M12.039 2c-5.46 0-9.922 4.462-9.922 9.922 0 1.956.574 3.805 1.57 5.378l-1.636 4.757 4.908-1.595a9.92 9.92 0 005.08 1.482c5.46 0 9.922-4.462 9.922-9.922S17.499 2 12.039 2zm4.512 13.914c-.244.242-.56.364-.91.364s-.664-.122-.91-.364l-1.393-1.393c-.244-.242-.366-.56-.366-.91 0-.35.122-.666.366-.91l1.187-1.187c.244-.242.56-.364.91-.364.35 0 .664.122.908.364.244.242.366.56.366.91 0 .35-.122.666-.366.91l-.81.81.59 1.464c.068.16.102.327.102.494 0 .167-.034.333-.102.494zm-1.897-.93c.122.122.285.183.45.183.167 0 .328-.06.45-.183.122-.12.183-.284.183-.45 0-.166-.06-.328-.183-.45l-1.187-1.187c-.122-.122-.285-.183-.45-.183-.167 0-.328.06-.45.183-.122.12-.183.284-.183.45 0 .166.06.328.183.45l1.187 1.187z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-blue-600">
+            <title>Facebook</title>
+            <path
+              d="M12 2C6.477 2 2 6.477 2 12c0 5.093 3.738 9.31 8.601 9.943v-7.008H7.075v-2.935h2.526V9.01c0-2.483 1.455-3.844 3.73-3.844 1.055 0 1.956.079 2.222.114v2.548h-1.503c-1.17 0-1.4.557-1.4 1.373v1.815h2.813l-.454 2.935h-2.359v7.008C18.262 21.31 22 17.093 22 12c0-5.523-4.477-10-10-10z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-pink-600">
+            <title>Instagram</title>
+            <path
+              d="M12 2c-2.716 0-5.432.062-8.148.185C2.115 2.296 2 2.392 2 4.19v15.62c0 1.802.115 1.895 1.852 2.005 2.716.123 5.432.185 8.148.185s5.432-.062 8.148-.185c1.737-.11 1.852-.203 1.852-2.005V4.19c0-1.802-.115-1.895-1.852-2.005C17.432 2.062 14.716 2 12 2zm0 2.28c2.616 0 5.232.046 7.848.158 1.13.064 1.25.12 1.25 1.488v14.152c0 1.369-.12 1.424-1.25 1.488-2.616.112-5.232.158-7.848.158s-5.232-.046-7.848-.158c-1.13-.064-1.25-.12-1.25-1.488V5.92c0-1.368.12-1.424 1.25-1.488C6.768 4.326 9.384 4.28 12 4.28zm0 2.92c-2.623 0-4.75 2.127-4.75 4.75s2.127 4.75 4.75 4.75 4.75-2.127 4.75-4.75-2.127-4.75-4.75-4.75zm0 2.28c1.368 0 2.47 1.102 2.47 2.47s-1.102 2.47-2.47 2.47-2.47-1.102-2.47-2.47 1.102-2.47 2.47-2.47zm7.398-3.08a1.132 1.132 0 100 2.264 1.132 1.132 0 000-2.264z" />
+          </svg>
+        </div>
+      </div>
 
       
-   <footer>
-  <div class="footer-container">
-    <div class="footer-col-1">
-      <h3>MOTHERCARE</h3>
-      <div class="social-links">
-        <a href="#">facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">whatsapp</a>
+      <div class="footer-col">
+        <h3>Información</h3>
+        <ul>
+          <li><a href="#">Devoluciones</a></li>
+        </ul>
       </div>
-    </div>
-    <div class="footer-col-2">
-      <h3>Información</h3>
-      <ul>
-        <li><a href="#">Cambios</a></li>
-        <li><a href="#">Devoluciones</a></li>
-      </ul>
-    </div>
-    <div class="footer-col-3">
-      <h3>Contacto</h3>
-      <p><strong>Horario:</strong> Lunes a Viernes, 9am - 6pm</p>
-      <p><strong>NIT:</strong> 123456789-0</p>
-      <p><a href="mailto:contacto@mothercare.com">Escríbenos</a></p>
-    </div>
-  </div>
-  <div class="copyright">
-    <p>&copy; 2025 MOTHERCARE - Todos los derechos reservados.</p>
-  </div>
-</footer>
 
-  <script src="script.js"></script>
+     
+      <div class="footer-col">
+        <h3>Atención al Cliente</h3>
+        <p><strong>Horario:</strong> Lunes a Viernes, 9am - 6pm</p>
+        <p><strong>NIT:</strong> 123456789-0</p>
+        <p><a href="mailto:contacto@mothercare.com">Escríbenos</a></p>
+      </div>
 
-  
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2025 MOTHERCARE - Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
 </body>
+
 </html>
