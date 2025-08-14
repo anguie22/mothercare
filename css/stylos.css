@@ -782,63 +782,74 @@ body {
     }
 }*/
 
-/* === FOOTER === */
+/* ==================================== */
+/* 4. Footer */
+/* ==================================== */
+
 footer {
-  background-color: #ffe0ec;
-  padding: 40px 20px 20px; /* Ajustamos el padding para un mejor espacio */
-  text-align: left; /* Alineamos el texto a la izquierda en las columnas */
-  margin-top: 40px;
+    background-color: #858082;
+    padding: 40px 20px;
+    color: #fff;
 }
 
 .footer-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
-  max-width: 1200px;
-  margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.footer-container h3 {
-  font-family: 'Montserrat', sans-serif; /* Mantenemos la misma fuente del logo */
-  font-size: 1.2rem;
-  margin-bottom: 15px;
+.footer-col {
+    flex: 1;
+    min-width: 220px;
 }
 
-.footer-container ul {
-  list-style: none;
+.footer-col h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #0e6777;
 }
 
-.footer-container a {
-  color: #444;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 8px;
+.footer-col ul {
+    list-style: none;
+    padding: 0;
 }
 
-.social-links a {
-  display: inline-block;
-  margin-right: 15px;
-  font-weight: bold;
+.footer-col a {
+    color: #d6d6e7;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.footer-col a:hover {
+    color: #fff;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-links svg {
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+    transition: transform 0.3s;
+}
+
+.social-links svg:hover {
+    transform: scale(1.2);
 }
 
 .copyright {
-  text-align: center;
-  margin-top: 30px;
-  padding-top: 20px;
-  border-top: 1px solid #5c1620; /* Línea separadora */
-}
-
-/* === RESPONSIVE FOOTER === */
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column; /* Las columnas se apilan en pantallas pequeñas */
-    text-align: center; /* Centramos el texto en el modo móvil */
-  }
-
-  .social-links {
-    margin-top: 10px;
-  }
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #5c1620;
 }
 
 /* === RESPONSIVE === */
