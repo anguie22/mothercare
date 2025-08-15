@@ -166,8 +166,9 @@ nav a:hover {
     object-fit: contain;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-     
+    border: 3px solid black; 
 }
+
 
 /* Tarjetas de Flip */
 .card-container {
@@ -342,6 +343,7 @@ nav a:hover {
 /* ==================================== */
 /* 4. Footer */
 /* ==================================== */
+
 
 footer {
     background-color: #858082;
@@ -681,3 +683,46 @@ form button:hover {
         flex: 1 1 45%;
     }
 }
+
+button {
+    padding: 10px 20px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+a button {
+    margin-left: 0;
+}
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h3 {
+    text-align: center;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
