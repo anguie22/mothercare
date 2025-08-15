@@ -617,7 +617,7 @@ input[name="age"][value="10-12"]:checked ~ .products-section .product-card:not([
 
 /* === FOOTER === */
 footer {
-  background-color: #ffe0ec;
+   background-color: #858082;
   padding: 40px 20px 20px; /* Ajustamos el padding para un mejor espacio */
   text-align: left; /* Alineamos el texto a la izquierda en las columnas */
   margin-top: 40px;

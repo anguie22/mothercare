@@ -197,7 +197,11 @@ nav a:hover {
 .card:hover .card-inner {
     transform: rotateY(180deg);
 }
-
+ 
+ a {
+    color:#3caee4;
+    text-decoration: none;
+  }
 .card-front,
 .card-back {
     position: absolute;
