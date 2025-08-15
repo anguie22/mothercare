@@ -4,43 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moda niña</title>
-    <link rel="stylesheet" href="css/stylos.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="nav-container">
-            <div class="logo">
-                <h1>MOTHERCARE</h1>
-        </div>
+     <header class="header-bar">
+    <div class="header-content">
 
-        <div class="search-container">
-            <input type="text" placeholder="Buscar..." class="search-input"/>
-            <img src="imagenes/usuario.png" alt="usuario" class="cart-icon">
-            <img src="imagenes/carrito.webp" alt="carrito" class="cart-icon">
-            <img src="imagenes/ubicacion.webp" alt="ubicación" class="cart-icon">
-        </div>        
+      
+      <div class="header-left">
+        <h1 class="logo">MOTHERCARE</h1>
+      </div>
+
+      <div class="header-center">
+        <input type="text" placeholder="Buscar..." class="search-input" />
+      </div>
+
+      
+      <div class="header-right">
         
-        
-          <!-- Menú -->
-    <nav class="navbar">
-        <ul>
-            <li class="izquierdo"><a href="index.html">Inicio</a></li>
-            
-            <li class="centro">
-                <a href="#">Categorías</a>
-                <ul class="submenu">
-                    <li><a href="modaNiña.html">Moda niña</a></li>
-                    <li><a href="bebes.html">Bebes</a></li>
-                    <li><a href="modaNiños.html">Moda niño</a></li>
-                </ul>
-            </li>
-            
-            <li><a href="ofertas.html">Ofertas</a></li>
-            <li><a href="quienessomos.html">Quiénes somos</a></li>
-            <li class="derecho"><a href="productos.html">Productos</a></li>
-        </ul>
-    </nav>
-        
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="icon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218
+              c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25L5.106 5.272M6
+              20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75
+              0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+        </svg>
+
+      
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="icon">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+        </svg>
+      </div>
+
+    </div>
+
+
+    
+
+<nav>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li class="menu-desplegable">
+      <a href="#">Categorías</a>
+      <ul class="submenu">
+        <li><a href="modaNiña.html">Moda niña</a></li>
+        <li><a href="bebes.html">Bebés</a></li>
+        <li><a href="modaNiños.html">Moda niño</a></li>
+      </ul>
+    </li>
+    <li><a href="/ofertas.html">Ofertas</a></li>
+    <li><a href="/productos.html">Nueva Colección</a></li>
+    <li><a href="/quienesSomos.html">Quienes somos</a></li>
+    
+  </ul>
+</nav>
+  </header> 
 
       <main class="main-content">
         <div class="container">
@@ -104,66 +124,9 @@
 
                 <div class="products-grid">
                     <!-- Camisas -->
-                    <div class="product-card" data-category="camisas" data-color="rosa" data-size="S" data-age="4-6">
-                        <div class="product-image">
-                            <span class="product-icon">👚</span>
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-name">Camisa Floral Rosa</h3>
-                            <p class="product-description">Hermosa camisa con estampado floral en tonos rosados, perfecta para el día a día.</p>
-                            <div class="product-details">
-                                <span><i class="fas fa-palette"></i> Rosa</span>
-                                <span><i class="fas fa-ruler"></i> S (3-4 años)</span>
-                            </div>
-                            <div class="product-price">$25.000</div>
-                            <button class="add-to-cart">
-                                <i class="fas fa-shopping-bag"></i>
-                                Añadir al Carrito
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="product-card" data-category="camisas" data-color="blanco" data-size="M" data-age="4-6">
-                        <div class="product-image">
-                            <span class="product-icon">👕</span>
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-name">Camisa Unicornio Blanca</h3>
-                            <p class="product-description">Camiseta blanca con diseño de unicornio mágico, ideal para niñas soñadoras.</p>
-                            <div class="product-details">
-                                <span><i class="fas fa-palette"></i> Blanco</span>
-                                <span><i class="fas fa-ruler"></i> M (5-6 años)</span>
-                            </div>
-                            <div class="product-price">$28.000</div>
-                            <button class="add-to-cart">
-                                <i class="fas fa-shopping-bag"></i>
-                                Añadir al Carrito
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="product-card" data-category="camisas" data-color="azul" data-size="L" data-age="7-9">
-                        <div class="product-image">
-                            <span class="product-icon">👚</span>
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-name">Camisa Mariposas Azul</h3>
-                            <p class="product-description">Camisa azul cielo con estampado de mariposas coloridas, muy cómoda y fresca.</p>
-                            <div class="product-details">
-                                <span><i class="fas fa-palette"></i> Azul</span>
-                                <span><i class="fas fa-ruler"></i> L (7-8 años)</span>
-                            </div>
-                            <div class="product-price">$30.000</div>
-                            <button class="add-to-cart">
-                                <i class="fas fa-shopping-bag"></i>
-                                Añadir al Carrito
-                            </button>
-                        </div>
-                    </div>
-
                     <div class="product-card" data-category="camisas" data-color="rojo" data-size="XS" data-age="1-3">
                         <div class="product-image">
-                            <span class="product-icon">👕</span>
+                            <img src="multimedia/camiseta roja niña.jpg" alt="niña">                           
                         </div>
                         <div class="product-info">
                             <h3 class="product-name">Camisa Corazones Roja</h3>
@@ -182,7 +145,7 @@
 
                     <div class="product-card" data-category="camisas" data-color="amarillo" data-size="XL" data-age="10-12">
                         <div class="product-image">
-                            <span class="product-icon">👚</span>
+                            <img src="multimedia/camisa amarilla niña.png" alt="niña">
                         </div>
                         <div class="product-info">
                             <h3 class="product-name">Camisa Estrellitas Amarilla</h3>
@@ -201,7 +164,7 @@
 
                     <div class="product-card" data-category="camisas" data-color="verde" data-size="XXL" data-age="10-12">
                         <div class="product-image">
-                            <span class="product-icon">👕</span>
+                            <img src="multimedia/camisa niña verde.jpg" alt="niña">
                         </div>
                         <div class="product-info">
                             <h3 class="product-name">Camisa Gatitos Verde</h3>
@@ -221,7 +184,7 @@
                     <!-- Vestidos -->
                     <div class="product-card" data-category="vestidos" data-color="rosa" data-size="S" data-age="4-6">
                         <div class="product-image">
-                            <span class="product-icon">👗</span>
+                            <img src="multimedia/vestido rosa niña.png" alt="niña">
                         </div>
                         <div class="product-info">
                             <h3 class="product-name">Vestido Princesa Rosa</h3>
@@ -240,7 +203,7 @@
 
                     <div class="product-card" data-category="vestidos" data-color="azul" data-size="M" data-age="4-6">
                         <div class="product-image">
-                            <span class="product-icon">👗</span>
+                            <img src="multimedia/vestido azul niña.png" alt="niña">
                         </div>
                         <div class="product-info">
                             <h3 class="product-name">Vestido Fiesta Azul</h3>
@@ -259,7 +222,7 @@
 
                     <div class="product-card" data-category="vestidos" data-color="blanco" data-size="L" data-age="7-9">
                         <div class="product-image">
-                            <span class="product-icon">👗</span>
+                            <img src="multimedia/vestido blaco niña.png" alt="niña">
                         </div>
                         <div class="product-info">
                             <h3 class="product-name">Vestido Casual Blanco</h3>
@@ -276,124 +239,11 @@
                         </div>
                     </div>
 
-                    <div class="product-card" data-category="vestidos" data-color="morado" data-size="XS" data-age="1-3">
-                        <div class="product-image">
-                            <span class="product-icon">👗</span>
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-name">Vestido Flores Morado</h3>
-                            <p class="product-description">Vestido morado con estampado de flores, suave y delicado para bebés.</p>
-                            <div class="product-details">
-                                <span><i class="fas fa-palette"></i> Morado</span>
-                                <span><i class="fas fa-ruler"></i> XS (1-2 años)</span>
-                            </div>
-                            <div class="product-price">$38.000</div>
-                            <button class="add-to-cart">
-                                <i class="fas fa-shopping-bag"></i>
-                                Añadir al Carrito
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="product-card" data-category="vestidos" data-color="amarillo" data-size="XL" data-age="10-12">
-                        <div class="product-image">
-                            <span class="product-icon">👗</span>
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-name">Vestido Verano Amarillo</h3>
-                            <p class="product-description">Vestido amarillo veraniego con tirantes, fresco y cómodo para días calurosos.</p>
-                            <div class="product-details">
-                                <span><i class="fas fa-palette"></i> Amarillo</span>
-                                <span><i class="fas fa-ruler"></i> XL (9-10 años)</span>
-                            </div>
-                            <div class="product-price">$48.000</div>
-                            <button class="add-to-cart">
-                                <i class="fas fa-shopping-bag"></i>
-                                Añadir al Carrito
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="product-card" data-category="vestidos" data-color="rojo" data-size="XXL" data-age="10-12">
-                        <div class="product-image">
-                            <span class="product-icon">👗</span>
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-name">Vestido Elegante Rojo</h3>
-                            <p class="product-description">Vestido rojo elegante con falda amplia, perfecto para eventos especiales.</p>
-                            <div class="product-details">
-                                <span><i class="fas fa-palette"></i> Rojo</span>
-                                <span><i class="fas fa-ruler"></i> XXL (11-12 años)</span>
-                            </div>
-                            <div class="product-price">$55.000</div>
-                            <button class="add-to-cart">
-                                <i class="fas fa-shopping-bag"></i>
-                                Añadir al Carrito
-                            </button>
-                        </div>
-                    </div>
-
+                  
                     <!-- Pantalones -->
-                    <div class="product-card" data-category="pantalones" data-color="azul" data-size="S" data-age="4-6">
-                        <div class="product-image">
-                            <span class="product-icon">👖</span>
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-name">Pantalón Mezclilla Azul</h3>
-                            <p class="product-description">Pantalón de mezclilla azul clásico, resistente y cómodo para jugar.</p>
-                            <div class="product-details">
-                                <span><i class="fas fa-palette"></i> Azul</span>
-                                <span><i class="fas fa-ruler"></i> S (3-4 años)</span>
-                            </div>
-                            <div class="product-price">$35.000</div>
-                            <button class="add-to-cart">
-                                <i class="fas fa-shopping-bag"></i>
-                                Añadir al Carrito
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="product-card" data-category="pantalones" data-color="rosa" data-size="M" data-age="4-6">
-                        <div class="product-image">
-                            <span class="product-icon">👖</span>
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-name">Pantalón Deportivo Rosa</h3>
-                            <p class="product-description">Pantalón deportivo rosa con banda lateral, perfecto para actividades físicas.</p>
-                            <div class="product-details">
-                                <span><i class="fas fa-palette"></i> Rosa</span>
-                                <span><i class="fas fa-ruler"></i> M (5-6 años)</span>
-                            </div>
-                            <div class="product-price">$32.000</div>
-                            <button class="add-to-cart">
-                                <i class="fas fa-shopping-bag"></i>
-                                Añadir al Carrito
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="product-card" data-category="pantalones" data-color="blanco" data-size="L" data-age="7-9">
-                        <div class="product-image">
-                            <span class="product-icon">👖</span>
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-name">Pantalón Elegante Blanco</h3>
-                            <p class="product-description">Pantalón blanco elegante de tela suave, ideal para ocasiones formales.</p>
-                            <div class="product-details">
-                                <span><i class="fas fa-palette"></i> Blanco</span>
-                                <span><i class="fas fa-ruler"></i> L (7-8 años)</span>
-                            </div>
-                            <div class="product-price">$38.000</div>
-                            <button class="add-to-cart">
-                                <i class="fas fa-shopping-bag"></i>
-                                Añadir al Carrito
-                            </button>
-                        </div>
-                    </div>
-
                     <div class="product-card" data-category="pantalones" data-color="verde" data-size="XS" data-age="1-3">
                         <div class="product-image">
-                            <span class="product-icon">👖</span>
+                            <img src="multimedia/pantalon verde niña.png" alt="niña">
                         </div>
                         <div class="product-info">
                             <h3 class="product-name">Pantalón Cómodo Verde</h3>
@@ -412,7 +262,7 @@
 
                     <div class="product-card" data-category="pantalones" data-color="morado" data-size="XL" data-age="10-12">
                         <div class="product-image">
-                            <span class="product-icon">👖</span>
+                            <img src="multimedia/jogger morado niña.png" alt="niña">
                         </div>
                         <div class="product-info">
                             <h3 class="product-name">Pantalón Jogger Morado</h3>
@@ -431,7 +281,7 @@
 
                     <div class="product-card" data-category="pantalones" data-color="rojo" data-size="XXL" data-age="10-12">
                         <div class="product-image">
-                            <span class="product-icon">👖</span>
+                          <img src="multimedia/short rojo niña.png" alt="niña">
                         </div>
                         <div class="product-info">
                             <h3 class="product-name">Pantalón Formal Rojo</h3>
@@ -449,9 +299,9 @@
                     </div>
 
                     <!-- Medias -->
-                    <div class="product-card" data-category="medias" data-color="rosa" data-size="S" data-age="4-6">
+                     <div class="product-card" data-category="medias" data-color="rosa" data-size="S" data-age="4-6">
                         <div class="product-image">
-                            <span class="product-icon">🧦</span>
+                            <img src="multimedia/medias rosas niñas.jpg" alt="niña">
                         </div>
                         <div class="product-info">
                             <h3 class="product-name">Medias Princesas Rosa</h3>
@@ -470,11 +320,11 @@
 
                     <div class="product-card" data-category="medias" data-color="blanco" data-size="M" data-age="4-6">
                         <div class="product-image">
-                            <span class="product-icon">🧦</span>
+                            <img src="multimedia/medias blancas para niñas.jpg" alt="">
                         </div>
                         <div class="product-info">
-                            <h3 class="product-name">Medias Deportivas Blancas</h3>
-                            <p class="product-description">Medias deportivas blancas con refuerzo en talón y punta, ideales para el deporte.</p>
+                            <h3 class="product-name">Medias llamativas Blancas</h3>
+                            <p class="product-description">Medias llamativas blancas con refuerzo en talón y punta, ideales para un evento especial.</p>
                             <div class="product-details">
                                 <span><i class="fas fa-palette"></i> Blanco</span>
                                 <span><i class="fas fa-ruler"></i> M (5-6 años)</span>
@@ -489,11 +339,11 @@
 
                     <div class="product-card" data-category="medias" data-color="azul" data-size="L" data-age="7-9">
                         <div class="product-image">
-                            <span class="product-icon">🧦</span>
+                            <img src="multimedia/media azules niña.jpg" alt="niña">
                         </div>
                         <div class="product-info">
                             <h3 class="product-name">Medias Arcoíris Azul</h3>
-                            <p class="product-description">Medias azules con diseño de arcoíris colorido, alegres y divertidas.</p>
+                            <p class="product-description">Medias azules con diseño  colorido, alegres y divertidas.</p>
                             <div class="product-details">
                                 <span><i class="fas fa-palette"></i> Azul</span>
                                 <span><i class="fas fa-ruler"></i> L (7-8 años)</span>
@@ -505,99 +355,53 @@
                             </button>
                         </div>
                     </div>
-
-                    <div class="product-card" data-category="medias" data-color="rojo" data-size="XS" data-age="1-3">
-                        <div class="product-image">
-                            <span class="product-icon">🧦</span>
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-name">Medias Corazones Roja</h3>
-                            <p class="product-description">Medias rojas con corazones blancos, tiernas y suaves para bebés.</p>
-                            <div class="product-details">
-                                <span><i class="fas fa-palette"></i> Rojo</span>
-                                <span><i class="fas fa-ruler"></i> XS (1-2 años)</span>
-                            </div>
-                            <div class="product-price">$8.000</div>
-                            <button class="add-to-cart">
-                                <i class="fas fa-shopping-bag"></i>
-                                Añadir al Carrito
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="product-card" data-category="medias" data-color="amarillo" data-size="XL" data-age="10-12">
-                        <div class="product-image">
-                            <span class="product-icon">🧦</span>
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-name">Medias Brillantes Amarilla</h3>
-                            <p class="product-description">Medias amarillas con hilos brillantes, perfectas para ocasiones especiales.</p>
-                            <div class="product-details">
-                                <span><i class="fas fa-palette"></i> Amarillo</span>
-                                <span><i class="fas fa-ruler"></i> XL (9-10 años)</span>
-                            </div>
-                            <div class="product-price">$14.000</div>
-                            <button class="add-to-cart">
-                                <i class="fas fa-shopping-bag"></i>
-                                Añadir al Carrito
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="product-card" data-category="medias" data-color="verde" data-size="XXL" data-age="10-12">
-                        <div class="product-image">
-                            <span class="product-icon">🧦</span>
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-name">Medias Fantasía Verde</h3>
-                            <p class="product-description">Medias verdes con diseños fantásticos, cómodas y duraderas.</p>
-                            <div class="product-details">
-                                <span><i class="fas fa-palette"></i> Verde</span>
-                                <span><i class="fas fa-ruler"></i> XXL (11-12 años)</span>
-                            </div>
-                            <div class="product-price">$16.000</div>
-                            <button class="add-to-cart">
-                                <i class="fas fa-shopping-bag"></i>
-                                Añadir al Carrito
-                            </button>
-                        </div>
-                    </div>
-                </div>
+                </div>  
+                
             </section>
+             
+                    
+     <footer>
+    <div class="footer-container">
+
+      <div class="footer-col">
+        <h3>MOTHERCARE</h3>
+        <div class="social-links">
+          <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-blue-600">
+            <title>Facebook</title>
+            <path
+              d="M12 2C6.477 2 2 6.477 2 12c0 5.093 3.738 9.31 8.601 9.943v-7.008H7.075v-2.935h2.526V9.01c0-2.483 1.455-3.844 3.73-3.844 1.055 0 1.956.079 2.222.114v2.548h-1.503c-1.17 0-1.4.557-1.4 1.373v1.815h2.813l-.454 2.935h-2.359v7.008C18.262 21.31 22 17.093 22 12c0-5.523-4.477-10-10-10z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-pink-600">
+            <title>Instagram</title>
+            <path
+              d="M12 2c-2.716 0-5.432.062-8.148.185C2.115 2.296 2 2.392 2 4.19v15.62c0 1.802.115 1.895 1.852 2.005 2.716.123 5.432.185 8.148.185s5.432-.062 8.148-.185c1.737-.11 1.852-.203 1.852-2.005V4.19c0-1.802-.115-1.895-1.852-2.005C17.432 2.062 14.716 2 12 2zm0 2.28c2.616 0 5.232.046 7.848.158 1.13.064 1.25.12 1.25 1.488v14.152c0 1.369-.12 1.424-1.25 1.488-2.616.112-5.232.158-7.848.158s-5.232-.046-7.848-.158c-1.13-.064-1.25-.12-1.25-1.488V5.92c0-1.368.12-1.424 1.25-1.488C6.768 4.326 9.384 4.28 12 4.28zm0 2.92c-2.623 0-4.75 2.127-4.75 4.75s2.127 4.75 4.75 4.75 4.75-2.127 4.75-4.75-2.127-4.75-4.75-4.75zm0 2.28c1.368 0 2.47 1.102 2.47 2.47s-1.102 2.47-2.47 2.47-2.47-1.102-2.47-2.47 1.102-2.47 2.47-2.47zm7.398-3.08a1.132 1.132 0 100 2.264 1.132 1.132 0 000-2.264z" />
+          </svg>
         </div>
-    </main>
-
-      <footer>
-  <div class="footer-container">
-    <div class="footer-col-1">
-      <h3>MOTHERCARE</h3>
-      <div class="social-links">
-        <a href="#">facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">whatsapp</a>
       </div>
-    </div>
-    <div class="footer-col-2">
-      <h3>Información</h3>
-      <ul>
-        <li><a href="#">Cambios</a></li>
-        <li><a href="#">Devoluciones</a></li>
-      </ul>
-    </div>
-    <div class="footer-col-3">
-      <h3>Contacto</h3>
-      <p><strong>Horario:</strong> Lunes a Viernes, 9am - 6pm</p>
-      <p><strong>NIT:</strong> 123456789-0</p>
-      <p><a href="mailto:contacto@mothercare.com">Escríbenos</a></p>
-    </div>
-  </div>
-  <div class="copyright">
-    <p>&copy; 2025 MOTHERCARE - Todos los derechos reservados.</p>
-  </div>
-</footer>
 
-  <script src="script.js"></script>
-</body>
-</html>
+      
+      <div class="footer-col">
+        <h3>Información</h3>
+        <ul>
+          <li><a href="/devoluciones.html">Devoluciones</a></li>
+        </ul>
+      </div>
+
+     
+      <div class="footer-col">
+          <h3>Atención al Cliente</h3>
+          <p><strong>Horario:</strong> Lunes a Viernes, 9am - 6pm</p>
+          <p><strong>NIT:</strong> 123456789-0</p>
+         <p><a href="mailto:contacto@mothercare.com">Escríbenos</a></p>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2025 MOTHERCARE - Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
 </body>
 </html>

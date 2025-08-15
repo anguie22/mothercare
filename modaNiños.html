@@ -4,52 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Moda niños</title>
-    <link rel="stylesheet" href="css/stylos.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="nav-container">
-            <div class="logo">
-               <a href="index.html" ><h1>MOTHERCARE</h1></a>
-        </div>
+  <header class="header-bar">
+    <div class="header-content">
 
-        <div class="search-container">
-            <input type="text" placeholder="Buscar..." class="search-input"/>
-            <img src="imagenes/usuario.png" alt="usuario" class="cart-icon">
-            <img src="imagenes/carrito.webp" alt="carrito" class="cart-icon">
-            <img src="imagenes/ubicacion.webp" alt="ubicación" class="cart-icon">
-        </div>        
-        
-        
-          <!-- Menú -->
-    <nav class="navbar">
-        <ul>
-            <li class="izquierdo"><a href="index.html">Inicio</a></li>
-            
-            <li class="centro">
-                <a href="#">Categorías</a>
-                <ul class="submenu">
-                    <li><a href="modaNiña.html">Moda niña</a></li>
-                    <li><a href="#">Bebes</a></li>
-                    <li><a href="modaNiños.html">Moda niños</a></li>
-                </ul>
-            </li>
-            
-            <li><a href="ofertas.html">Ofertas</a></li>
-            <li><a href="quienessomos.html">Quiénes somos</a></li>
-            <li class="derecho"><a href="productos.html">Productos</a></li>
-        </ul>
-    </nav>
-        
+      
+      <div class="header-left">
+        <h1 class="logo">MOTHERCARE</h1>
+      </div>
 
-    <main class="main-content">
+      <div class="header-center">
+        <input type="text" placeholder="Buscar..." class="search-input" />
+      </div>
+
+      
+      <div class="header-right">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="icon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218
+              c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25L5.106 5.272M6
+              20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75
+              0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+        </svg>
+
+      
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="icon">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+        </svg>
+      </div>
+
+    </div>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li class="menu-desplegable">
+      <a href="#">Categorías</a>
+      <ul class="submenu">
+        <li><a href="modaNiña.html">Moda niña</a></li>
+        <li><a href="bebes.html">Bebés</a></li>
+        <li><a href="modaNiños.html">Moda niño</a></li>
+      </ul>
+    </li>
+    <li><a href="/ofertas.html">Ofertas</a></li>
+    <li><a href="/productos.html">Nueva Colección</a></li>
+    <li><a href="/quienesSomos.html">Quienes somos</a></li>
+    
+  </ul>
+</nav>
+  </header> 
+
+    <main class=" main-content  moda-niños">
     <div class="container">
-      <aside class="filters-sidebar">
+      <aside class="moda-niños filters-sidebar h3">
         <h3><i class="fas fa-filter"></i> Filtros</h3>
 
         <div class="filter-group">
           <h4>Categoría</h4>
-          <div class="filter-options">
+          <div class="moda-niños  filter-options label:hover">
             <label><input type="radio" name="category" value="all" checked> Todas</label>
             <label><input type="radio" name="category" value="camisas"> Camisas</label>
             <label><input type="radio" name="category" value="chaquetas"> Chaquetas</label>
@@ -61,7 +78,7 @@
 
         <div class="filter-group">
           <h4>Color</h4>
-          <div class="filter-options">
+          <div class="moda-niños filter-options input[type radio ]">
             <label><input type="radio" name="color" value="all" checked> Todos</label>
             <label><input type="radio" name="color" value="azul"> Azul</label>
             <label><input type="radio" name="color" value="verde"> Verde</label>
@@ -97,48 +114,16 @@
         </div>
       </aside>
 
-      <section class="products-section">
-        <div class="products-header">
+      <section class="products-section  moda-niños">
+        <div class=" moda-niños products-header h2">
           <h2>Nuestra Colección - Niños</h2>
         </div>
 
         <div class="products-grid">
           <!-- Camisas -->
-          <div class="product-card" data-category="camisas" data-color="azul" data-size="S" data-age="4-6">
-            <div class="product-image">
-              <span class="product-icon">👕</span>
-            </div>
-            <div class="product-info">
-              <h3 class="product-name">Camiseta Dino Azul</h3>
-              <p class="product-description">Camiseta algodón con un divertido estampado de dinosaurios, ideal para el recreo.</p>
-              <div class="product-details">
-                <span><i class="fas fa-palette"></i> Azul</span>
-                <span><i class="fas fa-ruler"></i> S (3-4 años)</span>
-              </div>
-              <div class="product-price">$25.000</div>
-              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Añadir al Carrito</button>
-            </div>
-          </div>
-
-          <div class="product-card" data-category="camisas" data-color="gris" data-size="M" data-age="4-6">
-            <div class="product-image">
-              <span class="product-icon">👕</span>
-            </div>
-            <div class="product-info">
-              <h3 class="product-name">Camiseta Rayas Gris</h3>
-              <p class="product-description">Camiseta de rayas finas, suave y resistente — para uso diario y colegio.</p>
-              <div class="product-details">
-                <span><i class="fas fa-palette"></i> Gris</span>
-                <span><i class="fas fa-ruler"></i> M (5-6 años)</span>
-              </div>
-              <div class="product-price">$27.000</div>
-              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Añadir al Carrito</button>
-            </div>
-          </div>
-
           <div class="product-card" data-category="camisas" data-color="verde" data-size="L" data-age="7-9">
             <div class="product-image">
-              <span class="product-icon">👕</span>
+              <img src="multimedia/camiseta verde niño.jpg" alt="camiseta verde">
             </div>
             <div class="product-info">
               <h3 class="product-name">Camiseta Aventuras Verde</h3>
@@ -154,7 +139,7 @@
 
           <div class="product-card" data-category="camisas" data-color="rojo" data-size="XS" data-age="1-3">
             <div class="product-image">
-              <span class="product-icon">👕</span>
+             <img src="multimedia/camiseta niño.png" alt="camiseta roja">
             </div>
             <div class="product-info">
               <h3 class="product-name">Camiseta Estrella Roja</h3>
@@ -170,7 +155,7 @@
 
           <div class="product-card" data-category="camisas" data-color="amarillo" data-size="XL" data-age="10-12">
             <div class="product-image">
-              <span class="product-icon">👕</span>
+              <img src="multimedia/camiseta amarilla niño.jpg" alt="camiseta amarilla">
             </div>
             <div class="product-info">
               <h3 class="product-name">Camiseta Sol Amarilla</h3>
@@ -187,7 +172,7 @@
           <!-- Chaquetas -->
           <div class="product-card" data-category="chaquetas" data-color="azul" data-size="M" data-age="4-6">
             <div class="product-image">
-              <span class="product-icon">🧥</span>
+              <img src="multimedia/chaqueta azul niño.jpg" alt="chaqueta ">
             </div>
             <div class="product-info">
               <h3 class="product-name">Chaqueta Rompeviento Azul</h3>
@@ -203,7 +188,7 @@
 
           <div class="product-card" data-category="chaquetas" data-color="negro" data-size="L" data-age="7-9">
             <div class="product-image">
-              <span class="product-icon">🧥</span>
+              <img src="multimedia/chaqueta negra niño.jpg" alt="chaqueta">
             </div>
             <div class="product-info">
               <h3 class="product-name">Chaqueta Forro Negro</h3>
@@ -217,29 +202,14 @@
             </div>
           </div>
 
-          <div class="product-card" data-category="chaquetas" data-color="verde" data-size="XS" data-age="1-3">
-            <div class="product-image">
-              <span class="product-icon">🧥</span>
-            </div>
-            <div class="product-info">
-              <h3 class="product-name">Chaqueta Soft Verde</h3>
-              <p class="product-description">Abrigo suave y ligero para bebés, con cierre fácil.</p>
-              <div class="product-details">
-                <span><i class="fas fa-palette"></i> Verde</span>
-                <span><i class="fas fa-ruler"></i> XS (1-2 años)</span>
-              </div>
-              <div class="product-price">$48.000</div>
-              <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Añadir al Carrito</button>
-            </div>
-          </div>
-
+         
           <!-- Pantalones -->
           <div class="product-card" data-category="pantalones" data-color="azul" data-size="S" data-age="4-6">
             <div class="product-image">
-              <span class="product-icon">👖</span>
+              <img src="multimedia/jean casual azul para niños.jpg" alt="jean azul">
             </div>
             <div class="product-info">
-              <h3 class="product-name">Jean Resistente Azul</h3>
+              <h3 class="product-name">Jean Casual Azul</h3>
               <p class="product-description">Pantalón mezclilla flexible, perfecto para jugar y correr.</p>
               <div class="product-details">
                 <span><i class="fas fa-palette"></i> Azul</span>
@@ -252,7 +222,7 @@
 
           <div class="product-card" data-category="pantalones" data-color="verde" data-size="M" data-age="4-6">
             <div class="product-image">
-              <span class="product-icon">👖</span>
+             <img src="multimedia/joger deportivo verde.jpg" alt="jogger verde">
             </div>
             <div class="product-info">
               <h3 class="product-name">Jogger Deportivo Verde</h3>
@@ -268,7 +238,7 @@
 
           <div class="product-card" data-category="pantalones" data-color="gris" data-size="L" data-age="7-9">
             <div class="product-image">
-              <span class="product-icon">👖</span>
+             <img src="multimedia/pantalo gris niño.png" alt="pantalon gris">
             </div>
             <div class="product-info">
               <h3 class="product-name">Pantalón Formal Gris</h3>
@@ -285,7 +255,7 @@
           <!-- Zapatos -->
           <div class="product-card" data-category="zapatos" data-color="negro" data-size="M" data-age="4-6">
             <div class="product-image">
-              <span class="product-icon">👟</span>
+              <img src="multimedia/zapatilas negras niños.jpg" alt="zapatos">
             </div>
             <div class="product-info">
               <h3 class="product-name">Zapatillas Deportivas Negras</h3>
@@ -301,7 +271,7 @@
 
           <div class="product-card" data-category="zapatos" data-color="azul" data-size="L" data-age="7-9">
             <div class="product-image">
-              <span class="product-icon">👟</span>
+              <img src="multimedia/tenis azul.jpg" alt="zapatos">
             </div>
             <div class="product-info">
               <h3 class="product-name">Tenis Azul Marino</h3>
@@ -318,7 +288,7 @@
           <!-- Gorras -->
           <div class="product-card" data-category="gorras" data-color="rojo" data-size="S" data-age="4-6">
             <div class="product-image">
-              <span class="product-icon">🧢</span>
+              <img src="multimedia/gorra roja niño.jpg" alt="gorra">
             </div>
             <div class="product-info">
               <h3 class="product-name">Gorra Roja Aventurero</h3>
@@ -334,7 +304,7 @@
 
           <div class="product-card" data-category="gorras" data-color="amarillo" data-size="XS" data-age="1-3">
             <div class="product-image">
-              <span class="product-icon">🧢</span>
+             <img src="multimedia/gorra negra niño.png" alt="gorra">
             </div>
             <div class="product-info">
               <h3 class="product-name">Gorra Sol Amarilla</h3>
@@ -353,35 +323,49 @@
     </div>
   </main>
 
-    <footer>
-  <div class="footer-container">
-    <div class="footer-col-1">
-      <h3>MOTHERCARE</h3>
-      <div class="social-links">
-        <a href="#">facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">whatsapp</a>
-      </div>
-    </div>
-    <div class="footer-col-2">
-      <h3>Información</h3>
-      <ul>
-        <li><a href="#">Cambios</a></li>
-        <li><a href="#">Devoluciones</a></li>
-      </ul>
-    </div>
-    <div class="footer-col-3">
-      <h3>Contacto</h3>
-      <p><strong>Horario:</strong> Lunes a Viernes, 9am - 6pm</p>
-      <p><strong>NIT:</strong> 123456789-0</p>
-      <p><a href="mailto:contacto@mothercare.com">Escríbenos</a></p>
-    </div>
-  </div>
-  <div class="copyright">
-    <p>&copy; 2025 MOTHERCARE - Todos los derechos reservados.</p>
-  </div>
-</footer>
+     <footer>
+    <div class="footer-container">
 
-  <script src="script.js"></script>
+      <div class="footer-col">
+        <h3>MOTHERCARE</h3>
+        <div class="social-links">
+          <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-blue-600">
+            <title>Facebook</title>
+            <path
+              d="M12 2C6.477 2 2 6.477 2 12c0 5.093 3.738 9.31 8.601 9.943v-7.008H7.075v-2.935h2.526V9.01c0-2.483 1.455-3.844 3.73-3.844 1.055 0 1.956.079 2.222.114v2.548h-1.503c-1.17 0-1.4.557-1.4 1.373v1.815h2.813l-.454 2.935h-2.359v7.008C18.262 21.31 22 17.093 22 12c0-5.523-4.477-10-10-10z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-pink-600">
+            <title>Instagram</title>
+            <path
+              d="M12 2c-2.716 0-5.432.062-8.148.185C2.115 2.296 2 2.392 2 4.19v15.62c0 1.802.115 1.895 1.852 2.005 2.716.123 5.432.185 8.148.185s5.432-.062 8.148-.185c1.737-.11 1.852-.203 1.852-2.005V4.19c0-1.802-.115-1.895-1.852-2.005C17.432 2.062 14.716 2 12 2zm0 2.28c2.616 0 5.232.046 7.848.158 1.13.064 1.25.12 1.25 1.488v14.152c0 1.369-.12 1.424-1.25 1.488-2.616.112-5.232.158-7.848.158s-5.232-.046-7.848-.158c-1.13-.064-1.25-.12-1.25-1.488V5.92c0-1.368.12-1.424 1.25-1.488C6.768 4.326 9.384 4.28 12 4.28zm0 2.92c-2.623 0-4.75 2.127-4.75 4.75s2.127 4.75 4.75 4.75 4.75-2.127 4.75-4.75-2.127-4.75-4.75-4.75zm0 2.28c1.368 0 2.47 1.102 2.47 2.47s-1.102 2.47-2.47 2.47-2.47-1.102-2.47-2.47 1.102-2.47 2.47-2.47zm7.398-3.08a1.132 1.132 0 100 2.264 1.132 1.132 0 000-2.264z" />
+          </svg>
+        </div>
+      </div>
+
+      
+      <div class="footer-col">
+        <h3>Información</h3>
+        <ul>
+          <li><a href="/devoluciones.html">Devoluciones</a></li>
+        </ul>
+      </div>
+
+     
+      <div class="footer-col">
+        <h3>Atención al Cliente</h3>
+        <p><strong>Horario:</strong> Lunes a Viernes, 9am - 6pm</p>
+        <p><strong>NIT:</strong> 123456789-0</p>
+        <p><a href="mailto:contacto@mothercare.com">Escríbenos</a></p>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2025 MOTHERCARE - Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
 </body>
+
 </html>

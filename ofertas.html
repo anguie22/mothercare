@@ -4,73 +4,249 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ofertas</title>
-    <link rel="stylesheet" href="css/stylos.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="nav-container">
-            <div class="logo">
-                <h1>MOTHERCARE</h1>
-        </div>
+      <header class="header-bar">
+    <div class="header-content">
 
-        <div class="search-container">
-            <input type="text" placeholder="Buscar..." class="search-input"/>
-            <img src="imagenes/usuario.png" alt="usuario" class="cart-icon">
-            <img src="imagenes/carrito.webp" alt="carrito" class="cart-icon">
-            <img src="imagenes/ubicacion.webp" alt="ubicación" class="cart-icon">
-        </div>        
-        
-        
-          <!-- Menú -->
-    <nav class="navbar">
-        <ul>
-            <li class="izquierdo"><a href="index.html">Inicio</a></li>
-            
-            <li class="centro">
-                <a href="#">Categorías</a>
-                <ul class="submenu">
-                    <li><a href="modaNiña.html">Moda niña</a></li>
-                    <li><a href="bebes.html">Bebes</a></li>
-                    <li><a href="modaNiños.html">Moda niño</a></li>
-                </ul>
-            </li>
-            
-            <li><a href="#">Ofertas</a></li>
-            <li><a href="quienessomos.html">Quiénes somos</a></li>
-            <li class="derecho"><a href="productos.html">Productos</a></li>
-        </ul>
-    </nav>
-        
-
-      <footer>
-  <div class="footer-container">
-    <div class="footer-col-1">
-      <h3>MOTHERCARE</h3>
-      <div class="social-links">
-        <a href="#">facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">whatsapp</a>
+      
+      <div class="header-left">
+        <h1 class="logo">MOTHERCARE</h1>
       </div>
-    </div>
-    <div class="footer-col-2">
-      <h3>Información</h3>
-      <ul>
-        <li><a href="#">Cambios</a></li>
-        <li><a href="#">Devoluciones</a></li>
-      </ul>
-    </div>
-    <div class="footer-col-3">
-      <h3>Contacto</h3>
-      <p><strong>Horario:</strong> Lunes a Viernes, 9am - 6pm</p>
-      <p><strong>NIT:</strong> 123456789-0</p>
-      <p><a href="mailto:contacto@mothercare.com">Escríbenos</a></p>
-    </div>
-  </div>
-  <div class="copyright">
-    <p>&copy; 2025 MOTHERCARE - Todos los derechos reservados.</p>
-  </div>
-</footer>
 
-  <script src="script.js"></script>
+      <div class="header-center">
+        <input type="text" placeholder="Buscar..." class="search-input" />
+      </div>
+
+      
+      <div class="header-right">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="icon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218
+              c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25L5.106 5.272M6
+              20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75
+              0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+        </svg>
+
+      
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="icon">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+        </svg>
+      </div>
+
+    </div>
+
+
+    
+
+<nav>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li class="menu-desplegable">
+      <a href="">Categorías</a>
+      <ul class="submenu">
+        <li><a href="modaNiña.html">Moda niña</a></li>
+        <li><a href="bebes.html">Bebés</a></li>
+        <li><a href="modaNiños.html">Moda niño</a></li>
+      </ul>
+    </li>
+    <li><a href="/ofertas.html">Ofertas</a></li>
+    <li><a href="productos.html">Productos</a></li>
+    <li><a href="/quienesSomos.html">Quienes somos</a></li>
+    
+  </ul>
+</nav>
+  </header> 
+
+     <main class="main">
+        <section class="hero-offers">
+            <div class="container">
+                <h2 class="hero-title">🎉 ¡Ofertas Increíbles!</h2>
+                <p class="hero-subtitle">Aprovecha nuestros descuentos especiales por tiempo limitado</p>
+                <div class="countdown-timer">
+                    <div class="timer-item">
+                        <span class="timer-number">2</span>
+                        <span class="timer-label">Días</span>
+                    </div>
+                    <div class="timer-item">
+                        <span class="timer-number">14</span>
+                        <span class="timer-label">Horas</span>
+                    </div>
+                    <div class="timer-item">
+                        <span class="timer-number">35</span>
+                        <span class="timer-label">Min</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-offers">
+            <div class="container">
+                <div class="mega-offer">
+                    <div class="offer-badge">¡MEGA OFERTA!</div>
+                    <div class="offer-content">
+                        <h3>🎁 Pack Completo Bebé</h3>
+                        <p>Todo lo que necesitas para tu bebé en un solo pack</p>
+                        <div class="price-comparison">
+                            <span class="old-price">$89.99</span>
+                            <span class="new-price">$59.99</span>
+                            <span class="discount">-33%</span>
+                        </div>
+                        <button class="btn-offer">¡Comprar Ahora!</button>
+                    </div>
+                    <img src="https://images.pexels.com/photos/1166473/pexels-photo-1166473.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Pack bebé" class="offer-image">
+                </div>
+            </div>
+        </section>
+
+        <section class="flash-deals">
+            <div class="container">
+                <h2 class="section-title">⚡ Ofertas Flash</h2>
+                <div class="deals-grid">
+                    <div class="deal-card flash-sale">
+                        <div class="deal-badge">-50%</div>
+                        <img src="https://images.pexels.com/photos/7282/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=300" alt="Zapatos oferta" class="deal-image">
+                        <div class="deal-info">
+                            <h4>Zapatos Primeros Pasos</h4>
+                            <div class="deal-prices">
+                                <span class="old-price">$24.99</span>
+                                <span class="new-price">$12.99</span>
+                            </div>
+                            <button class="btn-deal">¡Lo Quiero!</button>
+                        </div>
+                    </div>
+
+                    <div class="deal-card hot-deal">
+                        <div class="deal-badge hot">HOT</div>
+                        <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Vestido oferta" class="deal-image">
+                        <div class="deal-info">
+                            <h4>Vestido Princesa</h4>
+                            <div class="deal-prices">
+                                <span class="old-price">$34.99</span>
+                                <span class="new-price">$24.99</span>
+                            </div>
+                            <button class="btn-deal">¡Aprovecha!</button>
+                        </div>
+                    </div>
+
+                    <div class="deal-card limited-time">
+                        <div class="deal-badge">-40%</div>
+                        <img src="https://images.pexels.com/photos/1598517/pexels-photo-1598517.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Camiseta oferta" class="deal-image">
+                        <div class="deal-info">
+                            <h4>Camiseta Superhéroe</h4>
+                            <div class="deal-prices">
+                                <span class="old-price">$18.99</span>
+                                <span class="new-price">$11.99</span>
+                            </div>
+                            <button class="btn-deal">¡Comprar!</button>
+                        </div>
+                    </div>
+
+                    <div class="deal-card exclusive">
+                        <div class="deal-badge exclusive-badge">EXCLUSIVO</div>
+                        <img src="https://images.pexels.com/photos/1598514/pexels-photo-1598514.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Zapatillas oferta" class="deal-image">
+                        <div class="deal-info">
+                            <h4>Zapatillas LED</h4>
+                            <div class="deal-prices">
+                                <span class="old-price">$39.99</span>
+                                <span class="new-price">$29.99</span>
+                            </div>
+                            <button class="btn-deal">¡Último Stock!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bundle-offers">
+            <div class="container">
+                <h2 class="section-title">💝 Packs Especiales</h2>
+                <div class="bundles-grid">
+                    <div class="bundle-card">
+                        <div class="bundle-header">
+                            <h3>Pack Niña Completo</h3>
+                            <div class="savings">Ahorra $15</div>
+                        </div>
+                        <div class="bundle-items">
+                            <div class="bundle-item">• Vestido floral</div>
+                            <div class="bundle-item">• Bailarinas rosa</div>
+                            <div class="bundle-item">• Set diademas</div>
+                        </div>
+                        <div class="bundle-price">
+                            <span class="old-price">$81.97</span>
+                            <span class="new-price">$66.97</span>
+                        </div>
+                        <button class="btn-bundle">Comprar Pack</button>
+                    </div>
+
+                    <div class="bundle-card popular">
+                        <div class="popular-badge">MÁS POPULAR</div>
+                        <div class="bundle-header">
+                            <h3>Pack Niño Aventurero</h3>
+                            <div class="savings">Ahorra €20</div>
+                        </div>
+                        <div class="bundle-items">
+                            <div class="bundle-item">• Camiseta superhéroe</div>
+                            <div class="bundle-item">• Jeans cómodos</div>
+                            <div class="bundle-item">• Zapatillas LED</div>
+                        </div>
+                        <div class="bundle-price">
+                            <span class="old-price">$91.97</span>
+                            <span class="new-price">$71.97</span>
+                        </div>
+                        <button class="btn-bundle">¡Mejor Oferta!</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+ <footer>
+    <div class="footer-container">
+
+      <div class="footer-col">
+        <h3>MOTHERCARE</h3>
+        <div class="social-links">
+          <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-blue-600">
+            <title>Facebook</title>
+            <path
+              d="M12 2C6.477 2 2 6.477 2 12c0 5.093 3.738 9.31 8.601 9.943v-7.008H7.075v-2.935h2.526V9.01c0-2.483 1.455-3.844 3.73-3.844 1.055 0 1.956.079 2.222.114v2.548h-1.503c-1.17 0-1.4.557-1.4 1.373v1.815h2.813l-.454 2.935h-2.359v7.008C18.262 21.31 22 17.093 22 12c0-5.523-4.477-10-10-10z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-pink-600">
+            <title>Instagram</title>
+            <path
+              d="M12 2c-2.716 0-5.432.062-8.148.185C2.115 2.296 2 2.392 2 4.19v15.62c0 1.802.115 1.895 1.852 2.005 2.716.123 5.432.185 8.148.185s5.432-.062 8.148-.185c1.737-.11 1.852-.203 1.852-2.005V4.19c0-1.802-.115-1.895-1.852-2.005C17.432 2.062 14.716 2 12 2zm0 2.28c2.616 0 5.232.046 7.848.158 1.13.064 1.25.12 1.25 1.488v14.152c0 1.369-.12 1.424-1.25 1.488-2.616.112-5.232.158-7.848.158s-5.232-.046-7.848-.158c-1.13-.064-1.25-.12-1.25-1.488V5.92c0-1.368.12-1.424 1.25-1.488C6.768 4.326 9.384 4.28 12 4.28zm0 2.92c-2.623 0-4.75 2.127-4.75 4.75s2.127 4.75 4.75 4.75 4.75-2.127 4.75-4.75-2.127-4.75-4.75-4.75zm0 2.28c1.368 0 2.47 1.102 2.47 2.47s-1.102 2.47-2.47 2.47-2.47-1.102-2.47-2.47 1.102-2.47 2.47-2.47zm7.398-3.08a1.132 1.132 0 100 2.264 1.132 1.132 0 000-2.264z" />
+          </svg>
+        </div>
+      </div>
+
+      
+      <div class="footer-col">
+        <h3>Información</h3>
+        <ul>
+          <li><a href="/devoluciones.html">Devoluciones</a></li>
+        </ul>
+      </div>
+
+     
+      <div class="footer-col">
+        <h3>Atención al Cliente</h3>
+        <p><strong>Horario:</strong> Lunes a Viernes, 9am - 6pm</p>
+        <p><strong>NIT:</strong> 123456789-0</p>
+        <p><a href="mailto:contacto@mothercare.com">Escríbenos</a></p>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2025 MOTHERCARE - Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
 </body>
+
 </html>
